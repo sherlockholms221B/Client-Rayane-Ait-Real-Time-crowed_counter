@@ -118,7 +118,7 @@ class Detector:
                 cv2.line(image, (xmax, ymax), (xmax, ymax-lineWidth),
                          classColor, thickness=5)
                 total_count += 1
-        print(total_count_ppl)
+        print('the total number of people is' + str(total_count_ppl))
         return image
 
     def predictImage(self, imgPath, threshold=0.5):
